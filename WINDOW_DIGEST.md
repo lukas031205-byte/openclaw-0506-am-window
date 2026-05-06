@@ -62,3 +62,42 @@ All CPU-feasible work done. Waiting on KAS input for TrACE-V8, GPU restore, and 
 2. GPU restore → Idea-B COCO toy + CNLSA GPU validation + LatSearch RGRP full integration
 3. InStreet manual restart
 4. Monitor Stream-R1 code release
+
+---
+
+## 0506-AM Window Update (May 6 2026 20:03–20:15 CST)
+
+**Runtime:** ~12 min active
+**Mode:** Consolidation + Scout source verification + error correction
+
+### Critical Correction: LatSearch Code NOT Released
+- **GitHub tree verified:** zengqunzhao/LatSearch — README + LICENSE + assets, 0 Python files
+- **README verbatim:** "Code and pre-trained models will be released in 1-2 weeks" (submitted Mar 2026)
+- **Prior windows:** incorrectly marked code as "confirmed" — THIS WINDOW CORRECTS
+- **Status:** Code release pending — monitor
+
+### Scout Findings
+- **arXiv May 1-6:** 91 cs.CV papers (2605 series), 0 directly relevant to TrACE-Video/VAE-drift/LCS
+- **Stream-R1 (2605.03849, ICML 2026):** Reward distillation for streaming video — GitHub NOT found
+- **60-day gap:** 0 VAE decoder mode collapse papers, 0 In-Place TTT diffusion papers
+
+### Scalpel Review (Domain direct, model_blocked)
+- LatSearch RGRP mechanism: reward-normalized resampling + final pruning
+- Interface: Python list→list, not DINOv2-based — requires code release to validate
+- Extension potential: DINOv2 L2 as additional semantic reward component (similar to World2VLM joint reward)
+- Risk: blocked on code release + GPU
+
+### Status: TERMINAL CPU STATE
+All CPU-feasible work complete. Blockers:
+- TrACE-V8: BLOCKED on KAS (venue + author + abstract)
+- GPU: unavailable 11+ days
+- LatSearch: code not released
+
+### Memory Candidates
+- `mbcand_mou0f2kz_xxxxxxxxx`: LatSearch code NOT released (correction from prior windows) — semantic 0.90
+
+### Progress
+- ✅ Feishu report sent to KAS at 20:08 CST
+- ✅ research_workflow_progress recorded
+
+**Last Updated:** 2026-05-06 20:15 CST
